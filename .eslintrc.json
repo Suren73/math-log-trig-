@@ -17,6 +17,7 @@
 			"LabeledStatement",
 			"WithStatement"
 		],
-		"no-console": "off"
+		"no-console": "off",
+		"no-underscore-dangle": "off"
 	}
 }

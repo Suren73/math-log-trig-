@@ -8,20 +8,20 @@ export default class MathChar extends Character {
   }
 
   set stoned(boolean) {
-		this._stoned = boolean; // eslint-disable-line
+    this._stoned = boolean;
   }
 
   get stoned() {
-		return this._stoned; // eslint-disable-line
+    return this._stoned;
   }
 
   set attack(value) {
-		this._attack = value; // eslint-disable-line
+    this._attack = value;
   }
 
   get attack() {
-		this._attack -= this._attack * ((this.distance - 1) / 10); // eslint-disable-line
+    this._attack -= this._attack * ((this.distance - 1) / 10);
     this.log = Math.log(this.distance) / Math.log(2);
-		return (this._stoned) ? (this._attack) - (this.log) * 5 : this._attack; // eslint-disable-line
+    return (this._stoned) ? (this._attack) - (this.log) * 5 : this._attack;
   }
 }
